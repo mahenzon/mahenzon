@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'><text x='0' y='12' font-size='12' fill='%23000'>{}</text></svg>"
+  />
+
+  <!-- og -->
+  <meta
+    property="og:title"
+    content="Сурен Хоренян. Python разработчик, преподаватель."
+  />
+  <meta
+    property="og:description"
+    content="Сурен - руководитель команды разработки, Python разработчик, преподаватель. Список проектов и услуг."
+  />
+  <!--  <meta-->
+  <!--    property="og:image"-->
+  <!--    content="https://drive.google.com/thumbnail?id=17QP5D-3bVDWo15z0ScuFYs3JSLrpoYh2&sz=w1000"-->
+  <!--  />-->
+  <meta
+    property="og:url"
+    content="https://mahenzon.ru"
+  />
+  <meta
+    property="og:type"
+    content="website"
+  />
+  <meta
+    property="og:locale"
+    content="ru_RU"
+  />
+  <!-- /og -->
+
+  <title>Сурен Хоренян - Разработчик и преподаватель</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #374151;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+<div class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="hero-gradient py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Сурен Хоренян</h1>
+          <p class="text-xl text-gray-600 mb-6">Руководитель команды разработки & Python разработчик</p>
+          <div class="flex space-x-4">
+            <a
+              href="https://t.me/mahenzon"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all"
+            >
+              <i class="fab fa-telegram mr-2"></i> Telegram
+            </a>
+            <a
+              href="https://vk.com/mahenzon"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition-all"
+            >
+              <i class="fab fa-vk mr-2"></i> ВКонтакте
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="w-64 h-64 bg-white rounded-full shadow-xl flex items-center justify-center overflow-hidden">
+            <img
+              src="https://drive.google.com/thumbnail?id=17QP5D-3bVDWo15z0ScuFYs3JSLrpoYh2&sz=w1000"
+              alt="Suren profile photo"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; document.getElementById('user-icon').style.display='flex';"
+            >
+            <i id="user-icon" class="fas fa-user text-6xl text-gray-400" style="display: none;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-12">
+    <!-- About Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Обо мне</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-laptop-code text-blue-500 mr-3"></i> Профессиональная деятельность
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+              Руководитель команды разработки
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+              Python разработчик
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+              Преподаватель веб-разработки на Python
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+              Open-source contributor
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-chalkboard-teacher text-blue-500 mr-3"></i> Образовательные проекты
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-book text-blue-500 mt-1 mr-2"></i>
+              Автор программы по веб-разработке на Python
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-book text-blue-500 mt-1 mr-2"></i>
+              Мини-курс по основам ООП
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-user-graduate text-blue-500 mt-1 mr-2"></i>
+              Частные менторские консультации
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-building text-blue-500 mt-1 mr-2"></i>
+              Контракты с юрлицами на пакеты консультаций
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Мои проекты</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md transition-all card-hover">
+          <div class="text-red-500 text-3xl mb-4">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">YouTube канал</h3>
+          <p class="text-gray-600 mb-4">Образовательные видео по веб-разработке на Python</p>
+          <a href="#" class="text-blue-500 hover:text-blue-600 font-medium flex items-center">
+            Перейти <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md transition-all card-hover">
+          <div class="text-blue-500 text-3xl mb-4">
+            <i class="fab fa-telegram"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Телеграм канал</h3>
+          <p class="text-gray-600 mb-4">Обсуждения, анонсы, а иногда советы по веб-разработке на Python</p>
+          <a href="#" class="text-blue-500 hover:text-blue-600 font-medium flex items-center">
+            Перейти <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md transition-all card-hover">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fab fa-vk"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Группа ВКонтакте</h3>
+          <p class="text-gray-600 mb-4">Тут тоже бывают анонсы</p>
+          <a href="#" class="text-blue-500 hover:text-blue-600 font-medium flex items-center">
+            Перейти <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md transition-all card-hover">
+          <div class="text-gray-800 text-3xl mb-4">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Образовательная программа по веб-разработке</h3>
+          <p class="text-gray-600 mb-4">Моя программа по веб-разработке на Python с нуля до Pro</p>
+          <a href="#" class="text-blue-500 hover:text-blue-600 font-medium flex items-center">
+            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md transition-all card-hover">
+          <div class="text-purple-500 text-3xl mb-4">
+            <i class="fas fa-object-group"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Основы структур данных и базовые алгоритмы</h3>
+          <p class="text-gray-600 mb-4">Введение в основы структур данных и знакомство с базовыми алгоритмами</p>
+          <div
+            class="text-grey-500 hover:text-grey-600 font-medium flex items-center"
+          >
+            Скоро анонс
+            <!-- <i class="fas fa-arrow-right ml-2"></i> -->
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md transition-all card-hover">
+          <div class="text-green-500 text-3xl mb-4">
+            <i class="fas fa-blog"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Блог</h3>
+          <p class="text-gray-600 mb-4">Статьи и заметки о разработке</p>
+          <div
+            class="text-grey-500 hover:text-grey-600 font-medium flex items-center"
+          >
+            Заморожено
+            <!-- Читать <i class="fas fa-arrow-right ml-2"></i> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Услуги</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-user-tie text-blue-500 mr-3"></i> Для частных лиц
+          </h3>
+          <ul class="space-y-4 text-gray-600">
+            <li class="flex items-start">
+              <div class="bg-blue-100 text-blue-600 rounded-full p-2 mr-3">
+                <i class="fas fa-graduation-cap text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Менторские консультации</h4>
+                <p class="text-sm">Индивидуальные занятия по разработке на Python</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-blue-100 text-blue-600 rounded-full p-2 mr-3">
+                <i class="fas fa-code text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Разбор проектов</h4>
+                <p class="text-sm">Анализ кода и помощь в решении задач</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-building text-blue-500 mr-3"></i> Для компаний
+          </h3>
+          <ul class="space-y-4 text-gray-600">
+            <li class="flex items-start">
+              <div class="bg-blue-100 text-blue-600 rounded-full p-2 mr-3">
+                <i class="fas fa-users text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Обучение сотрудников</h4>
+                <p class="text-sm">Пакеты консультаций для вашей команды</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-blue-100 text-blue-600 rounded-full p-2 mr-3">
+                <i class="fas fa-project-diagram text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Помощь в проектах</h4>
+                <p class="text-sm">Консультации по ведению и развитию проекта</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-xl font-bold text-gray-800">Сурен Хоренян</h3>
+          <p class="text-gray-600">Python разработчик и преподаватель</p>
+        </div>
+        <div class="flex space-x-6">
+          <a
+            href="https://www.youtube.com/@SurenKhorenyan/"
+            class="text-gray-600 hover:text-red-500 text-xl"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://t.me/Khorenyan"
+            class="text-gray-600 hover:text-blue-500 text-xl"
+          >
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a
+            href="https://vk.com/SurenKhorenyan"
+            class="text-gray-600 hover:text-blue-600 text-xl"
+          >
+            <i class="fab fa-vk"></i>
+          </a>
+          <!--  <a href="#" class="text-gray-600 hover:text-gray-800 text-xl">-->
+          <!--    <i class="fas fa-blog"></i>-->
+          <!--  </a>-->
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+        &copy; <span id="current-year">2022</span> Сурен Хоренян
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById("current-year").innerHTML = new Date().getFullYear();
+</script>
+
+<script src="//taplink.cc/id:11744153/widget/" async></script>
+</body>
+</html>
