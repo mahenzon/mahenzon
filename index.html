@@ -342,6 +342,32 @@
   document.getElementById("current-year").innerHTML = new Date().getFullYear();
 </script>
 
-<script src="//taplink.cc/id:11744153/widget/" async></script>
+<!-- having issues with this script - loading indicator not going away -->
+<!-- <script src="//taplink.cc/id:11744153/widget/" async></script> -->
+
+<!-- Load taplink widget after page load so the browser stops its loading indicator first.
+     A regular <script src="..."> keeps the tab in "loading" until that request completes/fails. -->
+<script>
+  (function() {
+    function loadTaplink() {
+      var s = document.createElement('script');
+      s.src = '//taplink.cc/id:11744153/widget/';
+      s.async = true;
+      s.onload = function() {
+        // Widget normally runs its UI setup on DOMContentLoaded/load; those have already fired,
+        // so we must call completed() ourselves to create the sidebar button.
+        if (window.taplink && typeof window.taplink.completed === 'function') {
+          window.taplink.completed();
+        }
+      };
+      document.body.appendChild(s);
+    }
+    if (document.readyState === 'complete') {
+      loadTaplink();
+    } else {
+      window.addEventListener('load', loadTaplink);
+    }
+  })();
+</script>
 </body>
 </html>
